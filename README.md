@@ -1,8 +1,5 @@
 # nodejs-app-mss
 
-To start this application first you can get this repo code using below url
-
-git clone https://github.com/MithunTechnologiesDevOps/nodejs-app-mss.git
 
 cd nodejs-app-mss
 
@@ -37,20 +34,4 @@ registry=<<NexusRepoURL>>
 _auth=<<Token>>
 email=<<EmailID>>
 always-auth=true
-
-
-In package.json add below entry,
-
-"publishConfig": {
-
-"registry": "http://IPAddress:8081/repository/nodejs-mithuntechnologies/"
-
-}
-
-  npm login --registry=NexusRepoURL
-  
-Execute below command to upload packages to nexus repo.
-
-npm publish
-  
 

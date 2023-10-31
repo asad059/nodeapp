@@ -4,7 +4,7 @@
   "description": "This Project explains all Node JS examples",
   "main": "app.js",
   "publishConfig": {
-    "registry": "http://13.233.162.85:9980/mithuntechnologies/repository/icicibanknoderepo/"
+    "registry": "https://github.com/asad059"
   },
   
   "scripts": {
@@ -27,13 +27,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://13.212.29.25:9980/mithuntechnologies/repository/nodejsproject/"
+    "url": "https://github.com/asad059/nodejsproject/"
   },
   "keywords": [
     "node",
-    "Mithun Technologies",
+    "asad",
     "express"
   ],
-  "author": "Mithun Reddy Lacchannagari",
-  "license": "MIT"
+  "author": "Asad",
+  "license": "M"
 }
