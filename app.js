@@ -17,13 +17,13 @@ console.log(__dirname);
 res.send("<h2>Welcome to Node JS express application</h2>"+appEnv.url+appEnv.port+port+process.env.LOGNAME);
 
 }).listen(9009);
-console.log(__dirname+"/images/mithunlogo.jpg");
+console.log(__dirname+"/images/logo.jpg");
 */
 app.get('/asad', function(request, response) {
     //response.send("<h2><center>Welcome to Node JS app</h2>");
     response.write("<h2><center><u>Node JS  Application </u></center></h2>");
 	
-    response.write("<h2><center>Welcome to  Corvit Systems. Please Contact us for more information or send an email to info@corvit.com <center></h2>" );
+    response.write("<h2><center>Welcome to  DevOps Learning. Please Contact us for more information or send an email to info@xyz.com <center></h2>" );
     response.end();
     
   })
