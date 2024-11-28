@@ -7,7 +7,7 @@ name: Mark stale issues and pull requests
 
 on:
   schedule:
-  - cron: '*/5 * * * *'
+  - cron: '*/3 * * * *'
 
 jobs:
   stale:
@@ -21,7 +21,11 @@ jobs:
     - uses: actions/stale@v5
       with:
         repo-token: ${{ secrets.TOKEN }}
-        stale-issue-message: 'Stale issue message'
-        stale-pr-message: 'Stale pull request message'
+        stale-issue-message: 'This issue is being closed due to inactivity.'
+        stale-pr-message: 'This PR is being closed due to inactivity.'
         stale-issue-label: 'no-issue-activity'
         stale-pr-label: 'no-pr-activity'
+        stale-issue-days: 0  # Directly marks issues as stale without delay
+        stale-pr-days: 0     # Directly marks PRs as stale without delay
+        close-issues: true   # Automatically close issues after they are marked stale
+        close-pull-requests: true  # Automatically close PRs after they are marked stale
