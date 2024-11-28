@@ -30,4 +30,8 @@ jobs:
         username: ubuntu
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
-        script: whoami
+        script: |
+          cd /home/ubuntu/nodeapp
+          git pull
+          npm install
+          pm2 start app.js --name "nodejs-app"
