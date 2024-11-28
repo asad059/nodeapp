@@ -34,4 +34,4 @@ jobs:
           cd /home/ubuntu/nodeapp
           git pull
           npm install
-          pm2 start app.js --name "nodejs-app"
+          pm2 restart "nodejs-app" || pm2 start app.js --name "nodejs-app"
